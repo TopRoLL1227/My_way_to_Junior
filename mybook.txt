@@ -1,0 +1,4 @@
+####################
+Seqeunces in For:
+Dict, list, tuple, set, range, str
+####################

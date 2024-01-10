@@ -1,0 +1,3 @@
+sudo apt install virtualenv
+python3 -m venv "name", "-m - запуск модуль бібліотеки як скріпт"
+source/name/bin/activate

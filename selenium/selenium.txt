@@ -1,0 +1,13 @@
+https://selenium-python.readthedocs.io/
+https://www.browserstack.com/guide/python-selenium-to-run-web-automation-test
+
+pip install webdriver_manager - це інструмент, який допомагає автоматизувати управління версіями веб-драйверів при використанні бібліотек 
+для автоматизованого тестування веб-сайтів, таких як Selenium.
+
+sudo apt install chromium-chromedriver
+pip install --upgrade selenium
+which chromedriver
+chromedriver -V
+sudo rm /usr/bin/chromedriver
+which chromium-browser
+
