@@ -1,0 +1,13 @@
+git branch
+git branch -D 'name'
+git checkout -b 'name'
+git status
+git add .
+git commit -m ""
+git pull --rebase
+git push origin "name_branch"
+git stash
+git stash list
+git stash apply 
+git checkout 'name'
+git restore --stage 'name'
