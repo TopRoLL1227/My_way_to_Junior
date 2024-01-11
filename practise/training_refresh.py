@@ -1,8 +1,4 @@
-def digitize(n):
-    a = str(n)[::-1]
-    s = [a]
-    g = int(s)
-    return g
+def find_needle(haystack):
+    return haystack.index('needle')
 
-print(digitize(35231))
-
+print(find_needle(['3', '123124234', None, 'needle', 'world', 'hay', 2, '3', True, False]))
