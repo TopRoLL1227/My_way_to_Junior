@@ -1,9 +1,36 @@
-a = '   hello world!   '.strip()  # Видаляє пробіли на початку та в кінці str
-print(a)
+my_string = "hello world"
+capitalized_string = my_string.capitalize()  # "Hello world"
 
-a = ' a b c'.replace(' ', '') 
-print(a)
+my_string = "hello world"
+uppercased_string = my_string.upper()  # "HELLO WORLD"
 
-a = 'aaabbbccc'.count('a')
-print(a)
+my_string = "Hello World"
+lowercased_string = my_string.lower()  # "hello world"
+
+my_string = "hello world"
+titled_string = my_string.title()  # "Hello World"
+
+my_string = "Hello World"
+swapped_string = my_string.swapcase()  # "hELLO wORLD"
+
+my_string = "hello world"
+count = my_string.count('l')  # 3
+
+my_string = "hello world"
+index = my_string.find('l')  # 2
+
+my_string = "hello world"
+new_string = my_string.replace('world', 'Python')  # "hello Python"
+
+my_string = "hello world"
+starts_with_hello = my_string.startswith('hello')  # True
+
+my_string = "hello world"
+ends_with_world = my_string.endswith('world')  # True
+
+my_string = "apple,orange,banana"
+fruits_list = my_string.split(',')  # ['apple', 'orange', 'banana']
+
+my_string = "   hello world   "
+trimmed_string = my_string.strip()  # "hello world"
 

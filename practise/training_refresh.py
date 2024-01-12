@@ -1,4 +1,4 @@
-def find_needle(haystack):
-    return haystack.index('needle')
+def reverse_seq(n):
+    return [x for x in range(1, n + 1)[::-1]]
 
-print(find_needle(['3', '123124234', None, 'needle', 'world', 'hay', 2, '3', True, False]))
+print(reverse_seq(5))
