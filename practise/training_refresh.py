@@ -1,4 +1,7 @@
-def reverse_seq(n):
-    return [x for x in range(1, n + 1)[::-1]]
+my_int = 42
+# Неможливо змінити значення my_int після створення
 
-print(reverse_seq(5))
+# Створення нового числового типу зі зміненим значенням
+new_int = my_int + 10
+
+print(new_int)
