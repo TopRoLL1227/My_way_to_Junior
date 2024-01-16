@@ -34,3 +34,11 @@ fruits_list = my_string.split(',')  # ['apple', 'orange', 'banana']
 my_string = "   hello world   "
 trimmed_string = my_string.strip()  # "hello world"
 
+formatted_string = "Текст з {} i {}".format('змінна1', 'змінна2')  # "Текст з {} і {}".format(змінна1, змінна2)
+
+words = ['Hello', ' ', 'World', '!']
+combined_string = ''.join(words)  # "Hello World!"
+
+
+
+
