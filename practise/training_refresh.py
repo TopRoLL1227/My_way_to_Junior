@@ -1,4 +1,10 @@
-def remove_exclamation_marks(s):
-    return s.replace('!', '')
+baza = {
+    'name': 'Vova',
+    'is_student': True
+} 
+info_baza = baza
 
-print(remove_exclamation_marks("Hello World!"))
+print(id(baza))
+print(id(info_baza))
+info_baza1 = baza.copy()
+print(id(info_baza1))

@@ -51,3 +51,32 @@ class Color(Enum):
 # Комплексні числа є немутабельними, і їх частини (real та imag) не можна змінювати.
     my_complex = complex(1, 2)
 # Неможливо змінити реальну чи уявну частину після створення
+
+my_number = 10  # 139779296363024
+other_number = 10  # 139779296363024
+
+my_list = [1, 2, 3]  # 140595837457664
+other_list = [1, 2, 3]  # 140595837459712
+
+info = {
+    'name': 'Vova',
+    'is_student': True
+}  
+print(id(info))  # 140696444200000
+info_copy = info
+print(id(info_copy))  # 140696444200000
+info['reviews_qty'] = 5
+print(info)  # {'name': 'Vova', 'is_student': True, 'reviews_qty': 5}
+print(id(info))  # 140696444200000
+
+baza = {
+    'name': 'Vova',
+    'is_student': True
+} 
+info_baza = baza
+
+print(id(baza))  # 140567442105152
+print(id(info_baza))  # 140567442105152
+info_baza1 = baza.copy()  # Часткова копія!!!!!!!!!!!!!!! Якщо є вкладені словарі то посилання на них зберігаються. 
+# Для цього потрібно from copy import deepcopy.
+print(id(info_baza1))  # 140567442542400
