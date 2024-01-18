@@ -1,4 +1,9 @@
-def find_needle(haystack):
-    return 'found the needle at position ' + str(haystack.index('needle'))
+def my_name():
+    name = 'Vovik'
+    return name
 
-print(find_needle(['3', '123124234', None, 'needle', 'world', 'hay', 2, '3', True, False]))
+def expression(here, also_here=my_name()):
+    here = 'My name is: ' = my_name()
+    return here
+
+print(expression(1))
