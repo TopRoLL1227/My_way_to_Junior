@@ -1,0 +1,10 @@
+number = 12345
+number_list = list(str(number))  # число стане окремим елементом списку.
+
+print(type(number_list))  # ['1', '2', '3', '4', '5']
+
+number = 12345
+number_list = [int(digit) for digit in str(number)]  # цифри у числовому форматі
+
+print(type(number_list))  # [1, 2, 3, 4, 5]
+

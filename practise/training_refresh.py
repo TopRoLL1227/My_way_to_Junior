@@ -1,10 +1,4 @@
-baza = {
-    'name': 'Vova',
-    'is_student': True
-} 
-info_baza = baza
+def find_needle(haystack):
+    return 'found the needle at position ' + str(haystack.index('needle'))
 
-print(id(baza))
-print(id(info_baza))
-info_baza1 = baza.copy()
-print(id(info_baza1))
+print(find_needle(['3', '123124234', None, 'needle', 'world', 'hay', 2, '3', True, False]))

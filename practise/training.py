@@ -56,3 +56,13 @@ print(type(s))
 
 
 # print(rps('paper', '')) 
+
+number1 = 12345
+number_list1 = list(str(number1))  # ['1', '2', '3', '4', '5']
+
+print(number_list1)
+
+number1 = 12345
+number_list1 = str(number1)  # error
+
+print(number_list1)
