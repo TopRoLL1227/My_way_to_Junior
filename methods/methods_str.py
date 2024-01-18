@@ -36,8 +36,15 @@ trimmed_string = my_string.strip()  # "hello world"
 
 formatted_string = "Текст з {} i {}".format('змінна1', 'змінна2')  # "Текст з {} і {}".format(змінна1, змінна2)
 
-words = ['Hello', ' ', 'World', '!']
+words = ['Hello', ' ', 'World', '!']  # використовується для об'єднання (злиття) елементів ітерабельного об'єкта в один рядок. 
 combined_string = ''.join(words)  # "Hello World!"
+
+name = "Вася"
+age = 25
+message = "Мені {1} років, і мене звати {0}.".format(name, age)
+
+print(message)
+
 
 
 

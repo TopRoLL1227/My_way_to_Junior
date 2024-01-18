@@ -1,10 +1,9 @@
-baza = {
-    'name': 'Vova',
-    'is_student': True
-} 
-info_baza = baza
+def my_name():
+    name = 'Vovik'
+    return name
 
-print(id(baza))
-print(id(info_baza))
-info_baza1 = baza.copy()
-print(id(info_baza1))
+def expression(here, also_here=my_name()):
+    here = 'My name is: ' = my_name()
+    return here
+
+print(expression(1))

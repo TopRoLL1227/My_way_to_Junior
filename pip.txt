@@ -1,3 +1,4 @@
 pip — система керування пакунками, яка використовується для встановлення та управління програмними пакетами, які написані на Python.
+sudo apt install python3-pip
 pip freeze
 pip install -U pip setuptools

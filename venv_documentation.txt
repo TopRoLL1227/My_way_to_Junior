@@ -1,3 +1,7 @@
 sudo apt install virtualenv
 python3 -m venv "name", "-m - запуск модуль бібліотеки як скріпт"
 source/name/bin/activate
+
+********************
+sudo apt install python3.10-venv
+python3 -m venv env
