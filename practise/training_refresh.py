@@ -1,9 +1,3 @@
-def my_name():
-    name = 'Vovik'
-    return name
-
-def expression(here, also_here=my_name()):
-    here = 'My name is: ' = my_name()
-    return here
-
-print(expression(1))
+a = [10, 20, 30, 40, 50, 60, 70]
+for x in range(len(a)):
+    print(a[1])
