@@ -66,3 +66,26 @@ number1 = 12345
 number_list1 = str(number1)  # error
 
 print(number_list1)
+
+# def my_dict(**dict):
+#     dict_tuple = (
+#         f"{dict}'name' wrote"
+#         f"{dict}'numb' pages"
+#     )
+#     return dict
+
+# print(my_dict(name='Vova', numb ='20'))
+
+
+
+
+
+def my_big_dict(**bigdict):
+    new_dict = (
+        f"{bigdict['name']} today is very "
+        f"{bigdict['second_name']}. He is very"
+        f"{bigdict['third_name']}!!"
+    )
+    return new_dict
+
+print(my_big_dict(name='Volodymyr', second_name='progressive', third_name='happy)'))

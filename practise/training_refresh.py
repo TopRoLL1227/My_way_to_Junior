@@ -1,9 +1,8 @@
-def my_name():
-    name = 'Vovik'
-    return name
+def new():
+    pass
 
-def expression(here, also_here=my_name()):
-    here = 'My name is: ' = my_name()
-    return here
+def callback(bla):
+    bla()
 
-print(expression(1))
+callback(new)
+    

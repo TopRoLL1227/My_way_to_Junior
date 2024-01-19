@@ -20,8 +20,8 @@ python manage.py makemessages -l uk -e html -i "templates/*"
 
 python manage.py makemessages -l uk -e html -i "templates/ваш_файл.html"
 
-
 Після внесення змін у django.po, вам потрібно виконати процес компіляції мовних файлів для оновлення перекладу. Для цього використовуйте команду:
 
-django-admin compilemessages
+django-admin compilemessages / python manage.py compilemessages
+
 

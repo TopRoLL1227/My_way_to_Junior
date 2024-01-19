@@ -51,7 +51,7 @@
 
 
 def num(*a):  # * Об'єднує аргументи в tuple
-    print(a[2])  #
+    print(a[2])  #  3
     return sum(a)  # 6
 
 print(num(1, 2, 3))
