@@ -1,91 +1,18 @@
-test = 'str'
-test1 = ['list']
-test2 = {'dict': '1'}
-test3 = (1, 2, 3)  # tuple
-test4 = {1, 2, 3}   # set
 
-print(type(test))
-print(type(test1))
-print(type(test2))
-print(type(test3))
-print(type(test4))
-
-
-i = ['apple', 'banana', 'lime']
-for x in i[0:2]:
-    print(' '.join(x).split()[2:4])
-    print(type(x))
-
-
-my_dict_object = {
-    'x': 10,
-    'y': True,
-    'z': 'abc'
+my_dict = {
+    'one': 1,
+    'two': 3,
+    'three': 2
 }
-for key in my_dict_object:  #  key - it is name of  key(x, y, z)
-    print(key, my_dict_object[key])
 
+print(my_dict.values())
+print(my_dict.keys())
 
-my_dict_1 = { 
-    'a': 500,
-    'b': True,
-    'c': 'abc'
-    }
+one_value = (my_dict['one'])  # 1
+two_value = (my_dict['two'])  # 3
 
-for key in my_dict_1:
-    print(key)
-    print(my_dict_1[key])
+print(one_value, two_value)  # 1 3
 
-name = 'Sam Harris'
-print(type(name))
-s = name.split(' ')
-print(s)
-print(type(s))
-
-# def count_by(x, n):
-#     arr = []
-#     for num in range(1, n+1):
-#         result = x * num
-#         arr.append(result)
-#     return arr
-
-# def rps(p1, p2):
-#     hand = {'rock':0, 'paper':1, 'scissors':2}
-#     results = ['Draw!', 'Player 1 won!', 'Player 2 won!']
-#     return results[hand[p1] - hand[p2]]
-
-
-# print(rps('paper', '')) 
-
-number1 = 12345
-number_list1 = list(str(number1))  # ['1', '2', '3', '4', '5']
-
-print(number_list1)
-
-number1 = 12345
-number_list1 = str(number1)  # error
-
-print(number_list1)
-
-# def my_dict(**dict):
-#     dict_tuple = (
-#         f"{dict}'name' wrote"
-#         f"{dict}'numb' pages"
-#     )
-#     return dict
-
-# print(my_dict(name='Vova', numb ='20'))
-
-
-
-
-
-def my_big_dict(**bigdict):
-    new_dict = (
-        f"{bigdict['name']} today is very "
-        f"{bigdict['second_name']}. He is very"
-        f"{bigdict['third_name']}!!"
-    )
-    return new_dict
-
-print(my_big_dict(name='Volodymyr', second_name='progressive', third_name='happy)'))
+one_key = list(my_dict.keys())[0]
+two_key = list(my_dict.keys())[1]
+print(one_key, two_key)
