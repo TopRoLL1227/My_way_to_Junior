@@ -86,3 +86,26 @@ def update_car_info(**car):
     return car
 
 print(update_car_info(brand='Ducatti', price=1000))
+
+def dict_puck(**dict1):
+    if 'happy' in dict1:  # Перевіряємо, чи ключ 'happy' переданий у виклику функції
+        dict1['Happy'] = dict1['happy']  # Присвоюємо нове значення ключу 'Happy' на основі ключа 'happy'
+        del dict1['happy']  # Видаляємо ключ 'happy' зі словника
+    if 'aga' in dict1:  # Перевіряємо, чи ключ 'aga' переданий у виклику функції
+        dict1['aga'] = 'new value for aga'  # Присвоюємо нове значення ключу 'aga'
+    return dict1
+
+# Викликаємо функцію з параметрами
+print(dict_puck(happy='1', aga='2'))
+
+def dict_puck(**dict):
+    if 'void' in dict:
+        dict['void'] = 25
+    dict['drow'] = 'ranger'
+    return dict
+
+
+print(dict_puck(void=3))
+
+
+
