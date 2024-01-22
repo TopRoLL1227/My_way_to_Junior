@@ -1,18 +1,9 @@
-my_dict = {
-    'a': 10,
-    'b': 30,
-    'c': 20
-}
+def sum_array(arr):
+    s = sum(sorted(arr)[1:-1])
+    return s
 
-for key in my_dict:
-    print(key)
+print(sum_array([6, 2, 1, 8, 10]))
 
-for key, value in my_dict.items():
-    print(value)
 
-for key, value in my_dict.items():
-    print(key, value)
-
-sorted_items = sorted(my_dict.items())
-for key, value in sorted_items:
-    print(key, value)
+# s = [7, 3, 9, 1]
+# print(sorted(s))
