@@ -1,9 +1,16 @@
-def sum_array(arr):
-    s = sum(sorted(arr)[1:-1])
-    return s
+# CASE 1
+def func(par_1):
+    print(par_1)
+func()
 
-print(sum_array([6, 2, 1, 8, 10]))
+
+def add(a,b):
+    return a + b
+add(2)
+
+# CASE 2
+def func(par_1=2):
+    print(par_1)
 
 
-# s = [7, 3, 9, 1]
-# print(sorted(s))
+
