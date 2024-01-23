@@ -11,7 +11,6 @@ zminna()
 
 
 
-<<<<<<< HEAD
 # asd = 1
 
 # def my_pract():
@@ -39,5 +38,3 @@ zminna()
 # print(asd)
 
 
-=======
->>>>>>> origin/student
