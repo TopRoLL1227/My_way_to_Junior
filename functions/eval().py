@@ -1,6 +1,7 @@
 # eval() приймає один обов'язковий аргумент рядок
-source = '5 + 5'  # "10"
-print(source)
+source = '5 + 5'
+print(source) 
+
 result = eval(source)
 print(result)  # 10
 eval('print(5 * 5)')  # 25
