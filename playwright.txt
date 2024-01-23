@@ -1,0 +1,8 @@
+pip install pytest-playwright
+playwright install
+
+python3 -m playwright install  - опція -m вказує Python на використання модуля, 
+який може бути викликаний з командного рядка. У цьому випадку, playwright - це модуль, із яким взаємодієте через командний рядок.
+
+pip install pytest-playwright playwright -U - оновлення
+
