@@ -1,4 +1,6 @@
-def new(): # callback func
+# функція зворотного виклику
+
+def new():  # callback func
     pass
 
 
@@ -23,3 +25,5 @@ def process_number(num, callback_fn):  # Без різниці, що робит�
 entered_num = int(input("Enter any number: "))
 
 process_number(entered_num, print_numb_info)
+
+
