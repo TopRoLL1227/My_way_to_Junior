@@ -1,18 +1,17 @@
-my_dict = {
-    'a': 10,
-    'b': 30,
-    'c': 20
-}
+# CASE 1
+def func(par_1):
+    print(par_1)
+func()
 
-for key in my_dict:
-    print(key)
 
-for key, value in my_dict.items():
-    print(value)
+def add(a,b):
+    return a + b
+add(2)
 
-for key, value in my_dict.items():
-    print(key, value)
+# CASE 2
+def func(par_1=2):
+    print(par_1)
 
-sorted_items = sorted(my_dict.items())
-for key, value in sorted_items:
-    print(key, value)
+
+
+
