@@ -8,7 +8,7 @@ git add .
 git commit -m ""
 git pull --rebase
 git push origin "name_branch"
-git stash
+git stash save "Comments"
 git stash list
 git stash apply 
 git checkout 'name'
