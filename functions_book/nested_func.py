@@ -24,39 +24,13 @@ def car3():
     def car4():
         def car5():
             print(m)
-        return car5()
-    return car4()
+        car5()
+    car4()
 
 car3()
 
 
-a = 5
-
-def zminna():
-    def new_zminna():
-        def way():
-            print(a)
-        return way()
-    return new_zminna()
-
-zminna()
-
-
-
-asd = 1
-
-def my_pract():
-    def add_pract():
-        def new_pract():
-            print(asd)
-        return new_pract()
-    return add_pract()
-
-my_pract()
-
-
-
-asd = 2
+a = 3
 
 def work():
     asd = 1
@@ -66,5 +40,30 @@ def work():
         return finish_work()
     return next_work()
 
-work()
-print(asd)
+work()  # 13
+print(a)  # 3
+
+#########################################################
+first = 1
+second = 2
+third = 3
+
+def numbers():
+
+    def one():
+        o = 'one'
+        print(o, first)
+
+    def two():
+        t = 'two'
+        print(t, second)
+
+    def three():
+        th = 'three'
+        print(th, third)
+    
+    one()
+    two()
+    three()
+
+numbers()
