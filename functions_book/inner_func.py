@@ -1,12 +1,25 @@
-# замикання
+import turtle
 
-def say_name(name):
-    def say_goodbye():
-        print('Who are ' + name + '?')
-    return say_goodbye
+# turtle.speed(1)
 
-# print(say_name('you'))  # Замыкания в Python
-n = say_name('you')
-n2 = say_name('they')
-n()
-n2()
+# turtle.forward(100)
+# turtle.left(90)
+# turtle.forward(100)
+# turtle.left(90)
+# turtle.forward(100)
+# turtle.left(90)
+# turtle.forward(100)
+# turtle.left(90)
+
+def move():
+    turtle.forward(100)
+    turtle.left(90)
+
+def square():
+    for i in range(4):
+        move()
+
+turtle.speed(1)
+square()
+turtle.goto(150, 150)
+square()

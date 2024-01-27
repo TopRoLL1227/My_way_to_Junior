@@ -67,3 +67,17 @@ def numbers():
     three()
 
 numbers()
+
+def one():
+    a = 1
+    def two():
+        a = 2
+        def three():
+            a = 3
+            print(a)
+        three()
+        print(a)
+    two()
+    print(a)
+
+one()
