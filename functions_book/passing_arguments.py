@@ -1,3 +1,5 @@
+# передача аргументів
+
 def passing(a, b):
     print(id(a), id(b), 'local')
     a = 100
