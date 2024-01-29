@@ -24,5 +24,3 @@ time.sleep(1000)
 
 #         time.sleep(50)
 
-#         ############### BUGGGGGG
-        

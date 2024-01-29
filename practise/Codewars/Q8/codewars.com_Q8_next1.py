@@ -58,3 +58,27 @@ def rental_car_cost(d):
 
 print(rental_car_cost(4)) #230
 
+#  Cat years, Dog years
+def human_years_cat_years_dog_years(human_years):
+    human = human_years
+    cat = 0
+    dog = 0
+    for x in range(1, human_years + 1):
+        if x == 1:
+            cat += cat + 15
+            dog += dog + 15
+        elif x == 2:
+            cat = cat + 9
+            dog = dog + 9
+        else:
+            cat = cat + 4
+            dog = dog + 5 
+    return [human, cat, dog]
+
+print(human_years_cat_years_dog_years(10))  # [10, 56, 64]
+
+#  altERnaTIng cAsE <=> ALTerNAtiNG CaSe
+def to_alternating_case(string):
+    return ''.join([x.upper() if x == x.lower() else x.lower() for x in string])
+
+print(to_alternating_case("ALTerNAtiNG CaSe"))
