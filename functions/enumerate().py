@@ -29,4 +29,10 @@ for index, value in enumerate(range(10, 20, 2)):
                          # 2 14
                          # 3 16
                          # 4 18 
-                         #
+    
+for index, value in enumerate(string, 10):  # часто використовується, коли необхідно пронумерувати з 1-ці, а не з 0
+    print(index, value)  # 10 a
+                         # 11 b
+                         # 12 c
+                         # 13 d
+                         # 14 e
