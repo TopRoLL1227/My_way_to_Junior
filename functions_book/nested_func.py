@@ -1,83 +1,32 @@
-# Вкладена функція 
+# Вкладена функція - це функція, яка визначається всередині іншої функції. 
+# Така вкладеність означає, що внутрішня функція має доступ до змінних і параметрів зовнішньої функції
+
+g = 'grey'
 
 
-a = 'AUDI'
-b = 'BMW'
-m = 'MERCEDES'
-
-
-def car1():
-    print(a)
-
-car1()
-
-
-def car2():
-    def car3():
-        print(b)
-    return car3()
-
-car2()
-
-
-def car3():
-    def car4():
-        def car5():
-            print(m)
-        car5()
-    car4()
-
-car3()
-
-
-a = 3
-
-def work():
-    asd = 1
-    def next_work():
-        def finish_work(a=13):
-            print(a)
-        return finish_work()
-    return next_work()
-
-work()  # 13
-print(a)  # 3
-
-#########################################################
-first = 1
-second = 2
-third = 3
-
-def numbers():
-
-    def one():
-        o = 'one'
-        print(o, first)
-
-    def two():
-        t = 'two'
-        print(t, second)
-
-    def three():
-        th = 'three'
-        print(th, third)
+def colors(param='r'):
     
-    one()
-    two()
-    three()
+    y = 'yellow' 
 
-numbers()
+    def print_red():
+        nonlocal y  # застосовується лише тоді, коли можна посилатися на локальны змінні
+        r = 'red'
+        print(r, y, g)  # red yellow grey
+        y = 'was changed'
+        #print(r, b)  # Error
 
-def one():
-    a = 1
-    def two():
-        a = 2
-        def three():
-            a = 3
-            print(a)
-        three()
-        print(a)
-    two()
-    print(a)
 
-one()
+    def print_blue():
+        b = 'blue'
+        print(b, y, g)  # blue was chanched grey. Чому was changed? y = 'yellow' змінили на 'was changed' рядком nonlocal y
+
+
+    if param == 'r':
+        print_red()
+    elif param =='b':
+        print_blue()
+    else:
+        print('I do know this color')
+
+colors()
+#print_red()  # Error
