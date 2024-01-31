@@ -1,0 +1,12 @@
+sudo apt install vim
+vim main.py
+:q! - вихід з vim 
+
+
+a = insert mode
+dd = delete string
+u = back
+ctrl + r = вперед
+gg = вгору файла
+shift +g = вниз файла
+f + символ = знайти
