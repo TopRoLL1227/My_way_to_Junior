@@ -19,4 +19,4 @@ def new_fn():
         print("Hello from the other block")
 
 
-new_fn()
+new_fn() 
