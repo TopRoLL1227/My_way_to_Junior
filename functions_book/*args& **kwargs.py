@@ -9,7 +9,7 @@ d, *e ,f = [2, 3]
 print(d, e, f)  # 2 [] 3
 
 s = [1, 11]
-print(list(range(*s)))
+print(list(range(*s)))  # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
 def f(a, b, c, d):
