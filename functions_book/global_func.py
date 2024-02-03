@@ -14,7 +14,7 @@ def my_new_fn():
     global b
     b = 25
 
-my_new_fn()
+my_new_fn() 
 print(b)  # 25
 
 g = 50
@@ -23,4 +23,4 @@ def my_next_fn(a, b):
     print(g)
     print(a, b)
 
-print(my_next_fn('xyz', 'abc'))  
+my_next_fn('xyz', 'abc')

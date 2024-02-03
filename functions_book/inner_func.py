@@ -5,7 +5,7 @@
 
 def main_func(name):
     def inner_func():
-        print('hello my friend', name)  # Тут відбувається замикання. Вкладена ф-ця користується змінною яка не оголошена в її тілі. При чому,
+        print('hello my friend', name)  # Тут відбувається замикання. Вкладена ф-ця користується змінною яка не оголошена в її тілі. Причому,
     return inner_func                   # змінна name не видаляється.
 
 
@@ -14,6 +14,25 @@ def main_func(name):
 #result()  # hello my friend
 #new_result()  # hello my friend
 main_func('vovik')()
+
+
+def massage(x):
+    def print_massage(y):
+        return x + y
+    return print_massage
+ 
+
+numb = massage(10)
+print(numb(10))  # 20
+
+
+def calculate(a, b):
+    def calculi():
+        return a + b
+    return calculi
+
+s = calculate(10, 10)
+print(s())  # 20
 
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>ПІСЛЯ ВИКЛИКУ ЛОКАЛЬНОЇ ФУНКЦІЇ ЗМІННІ ЗНИКАЮТЬ<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
@@ -80,7 +99,6 @@ print(s(), s1())
 def strip_string(strip_chars=' '):
     def do_strip(string):
         return string.strip(strip_chars)
-    
     return do_strip
 
 
@@ -89,4 +107,19 @@ strip2 = strip_string(" !?,.,;")
 
 print(strip1('hello python!.. '))
 print(strip2('hello python!.. '))
+
+#############################################################
+def calculate(a, b):
+    def calculi():
+        return a * b
+    return calculi
+
+s = calculate(2, 4)
+print(s())
+
+
+def calc(a, b):
+    return a * b
+
+print(calc(2, 4))
 
