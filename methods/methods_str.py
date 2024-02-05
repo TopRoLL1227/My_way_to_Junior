@@ -11,7 +11,7 @@ my_string = "hello world"
 titled_string = my_string.title()  # "Hello World"
 
 my_string = "Hello World"
-swapped_string = my_string.swapcase()  # "hELLO wORLD"
+swapped_string = my_string.swapcase()  # "hELLO wORLD" Може приймати аргумент chars
 
 my_string = "hello world"
 count = my_string.count('l')  # 3
