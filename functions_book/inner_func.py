@@ -123,3 +123,13 @@ def calc(a, b):
 
 print(calc(2, 4))
 
+################################################################3
+
+def message(number):
+    def print_massage(numb):
+        return number * numb
+    return print_massage
+
+z = message(5)  # number
+print(z(10))  # 50  # numb
+print(z(100))  # 500

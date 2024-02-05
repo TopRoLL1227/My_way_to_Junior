@@ -33,3 +33,20 @@ def colors():
 
 colors()
 #print_red()  # Error
+
+
+def f1(a):
+    
+    def f2(b):
+        print(a * b)
+
+    def f3(c):
+        print(a / c)
+
+    return f2, f3
+
+
+f2, f3 = f1(10)
+
+f1(f2(2))  # 20
+f1(f3(5))  # 2.0
