@@ -19,4 +19,4 @@ a = Car()
 print(a.__dict__)  # {}
 print(a.drive)  # <bound method Car.drive of <__main__.Car object at 0x7f3c47756830>> ЗВЕРНГИ УВАГУ BOUND METHOD <<<<<<<<<<<<<<<<<<
                 # Тобто для екземляру класу це метод, а для класу це функція
-print(a.model)
+#a.drive()  # ERROR
