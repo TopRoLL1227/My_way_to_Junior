@@ -1,36 +1,17 @@
-def inner_func(a, b):
-    def add():
-        print(a + b)
-        a()
-        b()
-    return add
-
-def say_hello():
-    print('Hello')
-
-def say_world():
-    print('World')
-
-
-say_hello = inner_func(say_hello, say_world)
-say_hello()
+class One:
+    def __init__(self, x, z, y):
+        self.x = x
+        self.z = z
+        self.y = y
+    
+    @classmethod
+    def two(cls, a):
+        return cls(*a.split(','))
+    
+asd = One.two("1,2,3")
+print(asd.x, asd.z, asd.y)
 
 
 
-def inner_func(a, b):
-    def add():
-        a()  # Викликаємо функцію a
-        b()  # Викликаємо функцію b
-    return add
-
-def say_hello():
-    print('Hello')
-
-def say_world():
-    print('World')
-
-# Передаємо дві різні функції у inner_func
-say_hello_and_world = inner_func(say_hello, say_world)
-
-# Викликаємо say_hello_and_world, яка викличе обидві функції
-say_hello_and_world()
+s = '5,6,7'
+print(*s)

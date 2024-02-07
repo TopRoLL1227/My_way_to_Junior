@@ -1,3 +1,6 @@
+# Перевірка аргументів, 
+# Валідація аргументів функції.
+
 def validate_arguments(fn):
     def wrapper(*args, **kwargs):
         for arg in [*args, *kwargs.values()]:  # бо за допомогою виклику values() з'вляється допступ до всіх значень вибраного словаря
@@ -41,5 +44,5 @@ try:
     print(sum_numbs1(7, 2))
     print(sum_numbs1(10.5, 2.3))
     print(sum_numbs1(a = 10.5, b = '2.0'))
-except ValueError as e:
+except ValueError as e:  # ("Type of the 2.0 is <class 'str'>", 'All arguments must be int or float!')
     print(e)
