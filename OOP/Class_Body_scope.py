@@ -25,8 +25,8 @@ class DepartamentIT:
         return cls.PYTHON_DEV, cls.GO_DEV, cls.REACT_DEV
 
     def hiring_pyt_dev(self):
-        self.PYTHON_DEV = self.PYTHON_DEV + 1  # оператор '=' не змінює PYTHON_DEF, а лише створює новий, локальний атрибут PYTHON_DEV в екземлярі класа it1
-
+        self.PYTHON_DEV = self.PYTHON_DEV + 1  # оператор '=' не змінює PYTHON_DEV, а лише створює новий, локальний атрибут PYTHON_DEV в екземлярі класа it1
+        # ВАЖЛИВО. Якщо необхідно змінити атрибут PYTHON_DEV то до нього потрібно звертатися DepatamentIT.PYTHON_DEV
 
 it1 = DepartamentIT()
 it1.info()  # 4 3 2
