@@ -81,4 +81,4 @@ print(hash(p2))  # -3550055125485641917
 d = {}
 d[p1] = 1
 d[p2] = 2
-print(d)  # {<__main__.Point2 object at 0x7fbe98f93df0>: 2}
+print(d)  # {<__main__.Point2 object at 0x7fbe98f93df0>: 2} - це говорить про те, що об'єкт p1 та p2 є одним й тим самим ключем. Бо їхні hash рівні
