@@ -26,4 +26,4 @@ c1()  # __call__
 c1(4)
 res = c1(5)
 res2 = c2(-11)
-print(res, res2)  # 3 1
+print(res, res2)  # 10 -11

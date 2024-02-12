@@ -44,4 +44,4 @@ p1 = Point(1, 2)
 print(bool(p1))  # True
 
 p2 = Point(0, 0)
-print(bool(p2))
+print(bool(p2))  # False  # не виконується жодна з умов
