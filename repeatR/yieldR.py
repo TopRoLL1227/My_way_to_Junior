@@ -4,7 +4,7 @@
     
 # s = my_func()
 # print(s)  # 1
-# print(s)  # 1
+# print(s)  #  1
 
 def my_yield():
     for i in [1, 2, 3, 4]:
