@@ -9,3 +9,12 @@ echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(pyenv init --path)"' >> ~/.bashrc
 echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
 
+pyenv install 'version'
+
+pyenv versions
+pyenv virtualenv 3.12.2 'name'
+
+pyenv global 3.11.2
+
+cd ...
+pyenv local 'name"

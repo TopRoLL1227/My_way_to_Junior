@@ -1,0 +1,6 @@
+https://www.youtube.com/watch?v=kWUW3sMK0Mk
+
+https://www.postgresql.org/download/linux/ubuntu/
+https://www.pgadmin.org/download/pgadmin-4-apt/
+
+ALTER USER postgres PASSWORD 'новий_пароль';
