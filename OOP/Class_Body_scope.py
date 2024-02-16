@@ -35,7 +35,9 @@ it1.info_prop  # 4 3 2
 print(it1.info_class())  # (4, 3, 2)
 print(it1.info_static()) # (4, 3, 2)
 print(it1.PYTHON_DEV)  # 4
+
 it1.hiring_pyt_dev()
 print(it1.PYTHON_DEV)  # 5
+
 print(DepartamentIT.PYTHON_DEV)  # 4
  

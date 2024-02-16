@@ -1,3 +1,5 @@
+# декоратор це функція яка розширює функціонал іншої функції
+
 def decorator(func):
     def inner():
         print('start decorator...')
