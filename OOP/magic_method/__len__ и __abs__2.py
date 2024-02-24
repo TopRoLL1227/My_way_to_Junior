@@ -26,7 +26,7 @@ class Vidrizok:
         return self.x2 - self.x1
     
     # def __len__(self):
-        # return abs(self)
+        # return abs( self)
     
     def __abs__(self):
         return abs(self.x1 - self.x2)
