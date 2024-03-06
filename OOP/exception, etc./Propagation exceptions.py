@@ -1,4 +1,5 @@
 # поширення винятків
+
 def third():
     print('start third')
     1/0
