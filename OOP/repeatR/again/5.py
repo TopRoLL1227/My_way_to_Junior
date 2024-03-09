@@ -15,7 +15,7 @@ class Point:
 
     def calc_distance(self, anoither_point):
         if isinstance(anoither_point, Point):
-            raise ValueError("Arg mus be class: 'Point'")
+            raise ValueError("Arg must be class: 'Point'" )
 
 
 

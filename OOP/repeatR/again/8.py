@@ -17,6 +17,7 @@ class BankAccount:
     balance = property(fget=get_balance, fset=set_balance)
 
 
+
 # a = BankAccount('Ivan', 100)
 # print(a.name)
 
