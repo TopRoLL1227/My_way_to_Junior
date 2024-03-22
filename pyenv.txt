@@ -18,3 +18,5 @@ pyenv global 3.11.2
 
 cd ...
 pyenv local 'name"
+
+pyenv install 3.10.0

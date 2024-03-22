@@ -1,5 +1,5 @@
 #  class filter(object)
-#   filter(function or None, iterable) --> filter object
+#  filter(function or None, iterable) --> filter object
 #  Функція filter створює ітератор, що містить тільки ті елементи iterable, для яких function повертає True.
 
 def f(x):

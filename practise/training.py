@@ -23,3 +23,8 @@ print(to_jaden_case("How can mirrors be real if our eyes aren't real"))
 
 "People Tell Me To Smile I Tell Them The Lack Of Emotion In My Face Doesn'T Mean I'M Unhappy"
 "People Tell Me To Smile I Tell Them The Lack Of Emotion In My Face Doesn't Mean I'm Unhappy"
+
+
+asd = lambda a, b: a * b
+
+print(asd(1, 2))
